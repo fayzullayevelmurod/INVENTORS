@@ -1,0 +1,101 @@
+// colors
+
+// colors
+
+// fonts
+
+$Epilogue: 'Epilogue', sans-serif;
+$SF: 'SF UI Display', sans-serif;
+// fonts
+
+// mixin
+@mixin flex-full-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-full-stretch {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+@mixin flex-start {
+    display: flex;
+    align-items: start;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+}
+
+@mixin transition {
+    transition: .2s ease;
+}
+
+// mixin
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+}
+
+span, label {
+    display: inline-block;
+}
+
+body {
+    font-family: 'SF UI Display', sans-serif;
+    font-style: normal;
+}
+
+input {
+    outline: none;
+}
+
+
+button {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+address {
+    font-style: normal;
+}
+
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.main_container {
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+// global block
+
+
+// import file
+@import 'header';
+@import 'footer';
+@import 'responsive';
