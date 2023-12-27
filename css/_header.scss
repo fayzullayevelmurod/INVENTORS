@@ -1,0 +1,54 @@
+.header {
+    .header_container {
+        @include flex-center;
+        justify-content: space-between;
+        gap: 59px;
+    }
+
+    .header_logo {
+        img {
+            width: 264px;
+            height: 88px;
+        }
+    }
+
+    .nav_link {
+        @include flex-center;
+        gap: 59px;
+    }
+
+    .nav_item {
+        a {
+            gap: 7px;
+            @include flex-center;
+            white-space: nowrap;
+            color: $black;
+            font-family: $SF;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: normal;
+            @include transition;
+
+            &:hover {
+                text-decoration-line: underline;
+            }
+        }
+    }
+
+    .header_registration_btn {
+        width: 216px;
+        height: 76px;
+        color: $coral;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 36px;border-radius: 24px;
+        border: 2px solid $black;
+        background:  $black;
+        @include transition;
+
+        &:hover {
+            background-color: transparent;
+            color: $black;
+        }
+    }
+}

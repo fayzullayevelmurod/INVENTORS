@@ -26,7 +26,29 @@
 //   console.log(err);
 // }
 
+var swiper = new Swiper(".goodsSwiper", {
+    slidesPerView: 1.2,
+    spaceBetween: 20,
+    breakpoints: {
+        576: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        },
+        768: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        },
+        992: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        }
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
 
+  });
 
 // home swipper
 // let swiper_one = new Swiper(".homeSwiper", {

@@ -42,12 +42,396 @@ address {
 }
 
 .wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
   width: 100%;
   overflow: hidden;
+}
+
+.header_container {
+  max-width: 1491px;
+  margin: 0 auto;
 }
 
 .main_container {
   max-width: 1220px;
   padding: 0 10px;
   margin: 0 auto;
+}
+
+.main_title {
+  color: #171717;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 92px;
+  letter-spacing: -1px;
+  margin-bottom: 25px;
+}
+
+.home {
+  margin-top: 56px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.home .home_text {
+  max-width: 551px;
+}
+.home h1 {
+  color: #171717;
+  font-size: 74px;
+  font-weight: 600;
+  line-height: 92px;
+  margin-bottom: 60px;
+}
+.home p {
+  max-width: 515px;
+  color: #9390A6;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 47px;
+  margin-bottom: 87px;
+}
+.home .home_btns {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+.home .home_btn_one {
+  color: #000;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 36px;
+  background-color: #FD3;
+  padding: 20px 45px;
+  border-radius: 24px;
+  border: transparent;
+  transition: 0.2s ease;
+  border: 2px solid transparent;
+}
+.home .home_btn_one:hover {
+  border: 2px solid #000;
+  background-color: transparent;
+}
+.home .home_btn_two {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 36px;
+  padding: 20px 45px;
+  border-radius: 24px;
+  border: transparent;
+  transition: 0.2s ease;
+  border: 2px solid #9390A6;
+}
+.home .home_btn_two:hover {
+  border: 2px solid #000;
+}
+
+.specialists .more_link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #257BFB;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -1px;
+  margin-bottom: 38px;
+}
+.specialists .specialists_cards {
+  gap: 56px;
+  display: flex;
+  align-items: center;
+}
+.specialists .specialists_card {
+  text-align: center;
+  flex: 1;
+  padding: 44px 10px 51px 10px;
+  border-radius: 24px;
+  background: #FFF;
+  box-shadow: 0px 14px 34px 0px rgba(36, 43, 50, 0.12);
+  transition: 0.2s ease;
+}
+.specialists .specialists_card:hover {
+  background: var(--Background, linear-gradient(180deg, #171717 0%, #292926 100%));
+  box-shadow: 0px 14px 34px 0px rgba(36, 43, 50, 0.12);
+}
+.specialists .specialists_card:hover h6 {
+  color: #fff;
+}
+.specialists .specialists_card:hover h4 {
+  color: #fff;
+}
+.specialists .specialists_card .img_block {
+  margin: 0 auto 19px auto;
+  width: 75px;
+  height: 75px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.specialists .specialists_card .one {
+  background: #009146;
+}
+.specialists .specialists_card .two {
+  background: #FD3;
+}
+.specialists .specialists_card .three {
+  background: #171717;
+}
+.specialists .specialists_card .four {
+  background: #8906FD;
+}
+.specialists .specialists_card h6 {
+  margin-bottom: 7px;
+  color: #171717;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -1px;
+}
+.specialists .specialists_card span {
+  margin-bottom: 36px;
+  color: #9390A6;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -1px;
+}
+.specialists .specialists_card h4 {
+  color: #171717;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -1px;
+}
+
+.team {
+  margin: 150px 0;
+}
+.team .team_cards {
+  display: flex;
+  align-items: center;
+  gap: 41px;
+}
+.team .team_card {
+  padding: 44px 24px;
+  text-align: center;
+  flex: 1;
+  border-radius: 28px;
+  background: #F6F7F9;
+  border: 2px solid transparent;
+  transition: 0.2s ease;
+}
+.team .team_card:hover {
+  border: 2px solid #F3F7FA;
+  background: transparent;
+}
+.team .team_card img {
+  height: 226px;
+}
+.team .team_card h6 {
+  margin: 33px 0 9px 0;
+  color: #171717;
+  font-family: "Epilogue", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 100%;
+}
+.team .team_card span {
+  color: #6B7277;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.header .header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 59px;
+}
+.header .header_logo img {
+  width: 264px;
+  height: 88px;
+}
+.header .nav_link {
+  display: flex;
+  align-items: center;
+  gap: 59px;
+}
+.header .nav_item a {
+  gap: 7px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  color: #171717;
+  font-family: "SF UI Display", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  transition: 0.2s ease;
+}
+.header .nav_item a:hover {
+  text-decoration-line: underline;
+}
+.header .header_registration_btn {
+  width: 216px;
+  height: 76px;
+  color: #FD3;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 36px;
+  border-radius: 24px;
+  border: 2px solid #171717;
+  background: #171717;
+  transition: 0.2s ease;
+}
+.header .header_registration_btn:hover {
+  background-color: transparent;
+  color: #171717;
+}
+
+.footer .footer_top .main_container {
+  padding: 58px 55px 71px 55px;
+  border-radius: 28px;
+  background: linear-gradient(180deg, #171717 0%, #292926 100%);
+}
+.footer .footer_top .footer_head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 46px;
+}
+.footer .footer_top .footer_contact {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer .footer_top .footer_contact a {
+  color: #F4F4F4;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 100%;
+}
+.footer .footer_top .footer_contact span {
+  color: #909090;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 100%;
+}
+.footer .footer_top .inventors {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.footer .footer_top .inventors h3 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 92px;
+  letter-spacing: -1px;
+}
+.footer .footer_top .inventors h2 {
+  color: #222220;
+  font-size: 122.932px;
+  font-weight: 600;
+  line-height: 100%;
+  opacity: 0.43;
+}
+.footer .footer_top .footer_link {
+  display: flex;
+  align-items: center;
+  gap: 44px;
+  margin-bottom: 56px;
+}
+.footer .footer_top .footer_item a {
+  color: #CBCBCB;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+  transition: 0.2s ease;
+}
+.footer .footer_top .footer_item a:hover {
+  text-decoration-line: underline;
+}
+.footer .footer_top h5 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 14px;
+  margin-bottom: 37px;
+}
+.footer .footer_top .footer_cards {
+  display: flex;
+  align-items: stretch;
+  gap: 47px;
+}
+.footer .footer_top .footer_cards .footer_card {
+  flex: 3;
+  border-radius: 16px;
+  padding: 16px;
+  background: #1B1B1A;
+}
+.footer .footer_top .footer_cards .footer_card p {
+  color: #AAAEB1;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0.2px;
+  border-radius: 16px;
+  margin-bottom: 23px;
+}
+.footer .footer_top .footer_cards .footer_card span {
+  color: #AAAEB1;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.18px;
+}
+.footer .footer_top .footer_cards .more_footer_card {
+  border-radius: 16px;
+  background: #1B1B1A;
+  flex: 1;
+  color: #FD3;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0.2px;
+  gap: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .footer_bottom {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.footer .footer_bottom .main_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .footer_bottom p {
+  color: #292926;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+}
+.footer .footer_bottom .footer_network {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.footer .footer_bottom a {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #171717 0%, #292926 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */
