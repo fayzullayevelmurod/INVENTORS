@@ -44,6 +44,26 @@ var swiper = new Swiper(".goodsSwiper", {
       nextEl: ".goods_btn_next",
       prevEl: ".goods_btn_prev",
     },
+});
+
+var swiper = new Swiper(".catalogSwiper", {
+    // slidesPerView: "auto",
+    spaceBetween: 56,
+    breakpoints: {
+        576: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 3,
+        },
+        992: {
+            slidesPerView: 4,
+        }
+    },
+    navigation: {
+      nextEl: ".catalog_btn_next",
+      prevEl: ".catalog_btn_prev",
+    },
 
 });
 

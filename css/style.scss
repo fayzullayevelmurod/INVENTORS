@@ -193,10 +193,89 @@ address {
 }
 // home
 
+// catalog
+.catalog {
+    margin: 150px 0;
+
+    .catalog_swipper {
+        position: relative;
+        @include flex-center();
+    }
+
+    .catalog_btn {
+        position: absolute;
+    }
+
+    .catalog_btn_next {
+        right: 0;
+    }
+
+    .catalog_btn_prev {
+        left: 0;
+    }
+
+    .swiper-button-disabled {
+        opacity: .7;
+        cursor: auto;
+    }
+
+    .catalog_card {
+        h4 {
+            height: 52px;
+            margin: 46px 0 20px 0;
+            color: $black;
+            text-align: center;
+            font-size: 26px;
+            font-weight: 500;
+            line-height: 100%;
+            letter-spacing: -1px;
+        }
+
+        ul {
+            margin-bottom: 29px;
+            li {
+                display: flex;
+                align-items: end;
+                justify-content: space-between;
+
+                p,
+                span {
+                    white-space: nowrap;
+                }
+
+                .line {
+                    width: 100%;
+                    border-bottom: 1px dashed #E4EAEE;
+                }
+            }
+        }
+
+        a {
+            border-radius: 12px;
+            background-color: $coral;
+            padding: 12px 0;
+            width: 100%;
+            color: #000;
+            text-align: center;
+            font-size: 14.44px;
+            font-weight: 500;
+            line-height: 23.63px;
+            @include transition();
+            border: 2px solid transparent;
+
+            &:hover {
+                background-color: #000;
+                color: $coral;
+            }
+        }
+    }
+}
+// catalog
+
 // goods
 .goods {
     margin-top: 150px;
-    
+
     .goods_swipper {
         @include flex-center();
         position: relative;
@@ -229,6 +308,7 @@ address {
         padding: 23px 27px 38px 27px;
         border-radius: 28px;
         background: #F6F7F9;
+        @include transition();
 
         .card_left {
             margin-bottom: 10px;
@@ -242,6 +322,7 @@ address {
         }
 
         h6 {
+            @include transition();
             text-align: center;
             margin: 25px 0 5px 0;
             color: $black;
@@ -262,6 +343,7 @@ address {
         }
 
         h4 {
+            @include transition();
             text-align: center;
             color: $black;
             font-size: 26px;
@@ -278,6 +360,14 @@ address {
             text-align: center;
             img {
                 width: 253px;
+            }
+        }
+
+        &:hover {
+            background: $--Background;
+
+            h6, h4 {
+                color: #F0F0F0;
             }
         }
 

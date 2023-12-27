@@ -140,6 +140,71 @@ address {
   border: 2px solid #000;
 }
 
+.catalog {
+  margin: 150px 0;
+}
+.catalog .catalog_swipper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.catalog .catalog_btn {
+  position: absolute;
+}
+.catalog .catalog_btn_next {
+  right: 0;
+}
+.catalog .catalog_btn_prev {
+  left: 0;
+}
+.catalog .swiper-button-disabled {
+  opacity: 0.7;
+  cursor: auto;
+}
+.catalog .catalog_card h4 {
+  height: 52px;
+  margin: 46px 0 20px 0;
+  color: #171717;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -1px;
+}
+.catalog .catalog_card ul {
+  margin-bottom: 29px;
+}
+.catalog .catalog_card ul li {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+.catalog .catalog_card ul li p,
+.catalog .catalog_card ul li span {
+  white-space: nowrap;
+}
+.catalog .catalog_card ul li .line {
+  width: 100%;
+  border-bottom: 1px dashed #E4EAEE;
+}
+.catalog .catalog_card a {
+  border-radius: 12px;
+  background-color: #FD3;
+  padding: 12px 0;
+  width: 100%;
+  color: #000;
+  text-align: center;
+  font-size: 14.44px;
+  font-weight: 500;
+  line-height: 23.63px;
+  transition: 0.2s ease;
+  border: 2px solid transparent;
+}
+.catalog .catalog_card a:hover {
+  background-color: #000;
+  color: #FD3;
+}
+
 .goods {
   margin-top: 150px;
 }
@@ -170,6 +235,7 @@ address {
   padding: 23px 27px 38px 27px;
   border-radius: 28px;
   background: #F6F7F9;
+  transition: 0.2s ease;
 }
 .goods .good_card .card_left {
   margin-bottom: 10px;
@@ -182,6 +248,7 @@ address {
   border: 1px solid #DCE2E8;
 }
 .goods .good_card h6 {
+  transition: 0.2s ease;
   text-align: center;
   margin: 25px 0 5px 0;
   color: #171717;
@@ -200,6 +267,7 @@ address {
   margin-bottom: 15px;
 }
 .goods .good_card h4 {
+  transition: 0.2s ease;
   text-align: center;
   color: #171717;
   font-size: 26px;
@@ -215,6 +283,12 @@ address {
 }
 .goods .good_card .good_img img {
   width: 253px;
+}
+.goods .good_card:hover {
+  background: linear-gradient(180deg, #171717 0%, #292926 100%);
+}
+.goods .good_card:hover h6, .goods .good_card:hover h4 {
+  color: #F0F0F0;
 }
 
 .specialists .specialists_cards {
