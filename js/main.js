@@ -27,91 +27,23 @@
 // }
 
 var swiper = new Swiper(".goodsSwiper", {
-    slidesPerView: 1.2,
+    // slidesPerView: "auto",
     spaceBetween: 20,
     breakpoints: {
         576: {
-        slidesPerView: 2,
-        spaceBetween: 30,
+            slidesPerView: 1,
         },
         768: {
-        slidesPerView: 3,
-        spaceBetween: 30,
+            slidesPerView: 2,
         },
         992: {
-        slidesPerView: 4,
-        spaceBetween: 30,
+            slidesPerView: 3,
         }
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".goods_btn_next",
+      prevEl: ".goods_btn_prev",
     },
 
-  });
+});
 
-// home swipper
-// let swiper_one = new Swiper(".homeSwiper", {
-//   slidesPerView: "auto",
-//   // effect: "fade",
-//   navigation: {
-//     nextEl: ".home_btn_right",
-//     prevEl: ".home_btn_left",
-//   },
-//   pagination: {
-//     el: ".home_swiper_pagination",
-//     clickable: true,
-//   },
-// });
-// // home swipper
-
-// // popular_product
-// let swiper_two = new Swiper(".popularSwiper", {
-//   slidesPerView: 1.2,
-//   spaceBetween: 20,
-//   breakpoints: {
-//     576: {
-//       slidesPerView: 2,
-//       spaceBetween: 30,
-//     },
-//     768: {
-//       slidesPerView: 3,
-//       spaceBetween: 30,
-//     },
-//     992: {
-//       slidesPerView: 4,
-//       spaceBetween: 30,
-//     }
-//   },
-//   navigation: {
-//     nextEl: ".product_slider_next",
-//     prevEl: ".product_slider_prev",
-//   },
-// });
-// // popular_product
-
-
-// // about page
-// let swiper_three = new Swiper(".aboutSwiper", {
-//   slidesPerView: 1.2,
-//   spaceBetween: 20,
-//   breakpoints: {
-//     576: {
-//       slidesPerView: 1,
-//       spaceBetween: 30,
-//     },
-//     768: {
-//       slidesPerView: 2,
-//       spaceBetween: 30,
-//     },
-//     992: {
-//       slidesPerView: 3,
-//       spaceBetween: 30,
-//     }
-//   },
-//   navigation: {
-//     nextEl: ".avalon_office_next",
-//     prevEl: ".avalon_office_prev",
-//   },
-// });
-// about page

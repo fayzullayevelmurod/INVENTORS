@@ -69,6 +69,18 @@ address {
   margin-bottom: 25px;
 }
 
+.more_link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #257BFB;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -1px;
+  margin-bottom: 38px;
+}
+
 .home {
   margin-top: 56px;
   display: flex;
@@ -128,17 +140,83 @@ address {
   border: 2px solid #000;
 }
 
-.specialists .more_link {
+.goods {
+  margin-top: 150px;
+}
+.goods .goods_swipper {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  color: #257BFB;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 100%;
-  letter-spacing: -1px;
-  margin-bottom: 38px;
+  position: relative;
 }
+.goods .goods_swipper .good_btn {
+  position: absolute;
+}
+.goods .goods_swipper .goods_btn_next {
+  right: 0;
+}
+.goods .goods_swipper .goods_btn_prev {
+  left: 0;
+}
+.goods .goods_swipper .swiper-button-disabled {
+  opacity: 0.7;
+  cursor: auto;
+}
+.goods .goods_btn_prev,
+.goods .goods_btn_next {
+  cursor: pointer;
+}
+.goods .good_card {
+  width: 100%;
+  padding: 23px 27px 38px 27px;
+  border-radius: 28px;
+  background: #F6F7F9;
+}
+.goods .good_card .card_left {
+  margin-bottom: 10px;
+  padding: 10px;
+  color: #9390A6;
+  font-size: 11.086px;
+  font-weight: 400;
+  line-height: 123%;
+  border-radius: 28.407px;
+  border: 1px solid #DCE2E8;
+}
+.goods .good_card h6 {
+  text-align: center;
+  margin: 25px 0 5px 0;
+  color: #171717;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 123%;
+  letter-spacing: -1px;
+}
+.goods .good_card p {
+  color: #9390A6;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 123%;
+  letter-spacing: -1px;
+  margin-bottom: 15px;
+}
+.goods .good_card h4 {
+  text-align: center;
+  color: #171717;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 123%;
+  letter-spacing: -1px;
+}
+.goods .good_card h4 span {
+  margin-left: 10px;
+}
+.goods .good_card .good_img {
+  text-align: center;
+}
+.goods .good_card .good_img img {
+  width: 253px;
+}
+
 .specialists .specialists_cards {
   gap: 56px;
   display: flex;
@@ -247,6 +325,9 @@ address {
   line-height: 100%;
 }
 
+.header {
+  margin-top: 57px;
+}
 .header .header_container {
   display: flex;
   align-items: center;

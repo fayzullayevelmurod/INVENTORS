@@ -1,4 +1,6 @@
 .header {
+    margin-top: 57px;
+    
     .header_container {
         @include flex-center;
         justify-content: space-between;
