@@ -141,14 +141,15 @@ address {
 }
 
 .inventions .inventions_swipper {
-  border: 1px solid red;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 .inventions .inventions_swipper .inventions_card {
   border-radius: 28px;
   background: #F6F7F9;
   transition: 0.2s ease;
-  padding: 30px 30px 24px 30px;
+  padding: 30px 24px;
 }
 .inventions .inventions_swipper .inventions_card:hover {
   background-color: #171717;
@@ -159,13 +160,13 @@ address {
 .inventions .inventions_swipper .inventions_card:hover a svg {
   transform: scale(2.5);
 }
-.inventions .inventions_swipper .catalog_btn {
+.inventions .inventions_swipper .invention_btn {
   position: absolute;
 }
-.inventions .inventions_swipper .catalog_btn_next {
+.inventions .inventions_swipper .inventions_btn_next {
   right: 0;
 }
-.inventions .inventions_swipper .catalog_btn_prev {
+.inventions .inventions_swipper .inventions_btn_prev {
   left: 0;
 }
 .inventions .inventions_swipper .swiper-button-disabled {
@@ -199,11 +200,20 @@ address {
   height: 14px;
   border-radius: 17px;
   border: 2px solid #212529;
+  display: flex;
+  align-items: center;
 }
 .inventions .inventions_swipper .inventions_head .progress span {
-  height: 16px;
+  border-radius: 17px;
+  height: 14px;
   width: 100%;
   background-color: #FD3;
+}
+.inventions .inventions_swipper .inventions_head .progress_two span {
+  width: 80%;
+}
+.inventions .inventions_swipper .inventions_head .progress_three span {
+  width: 63%;
 }
 .inventions .inventions_swipper .inventions_head h6 {
   color: #535B61;
@@ -226,6 +236,10 @@ address {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+.inventions .inventions_swipper .invention_body .invention_left img {
+  width: 205px;
+  height: 205px;
 }
 .inventions .inventions_swipper .invention_right {
   display: flex;
@@ -427,14 +441,34 @@ address {
   color: #F0F0F0;
 }
 
-.specialists .specialists_cards {
-  gap: 56px;
+.specialists .more_link {
+  margin-bottom: 0;
+}
+.specialists .specialists_swipper {
+  padding: 30px;
   display: flex;
   align-items: center;
+  position: relative;
+}
+.specialists .specialists_btn {
+  position: absolute;
+}
+.specialists .specialists_btn_next {
+  right: 0;
+}
+.specialists .specialists_btn_prev {
+  left: 0;
+}
+.specialists .swiper-button-disabled {
+  opacity: 0.7;
+  cursor: auto;
+}
+.specialists .specialistsSwiper {
+  padding: 30px 15px;
 }
 .specialists .specialists_card {
+  width: 100%;
   text-align: center;
-  flex: 1;
   padding: 44px 10px 51px 10px;
   border-radius: 24px;
   background: #FFF;
@@ -499,15 +533,27 @@ address {
 .team {
   margin: 150px 0;
 }
-.team .team_cards {
+.team .team_slider {
   display: flex;
   align-items: center;
-  gap: 41px;
+  position: relative;
+}
+.team .team_btn {
+  position: absolute;
+}
+.team .team_btn_next {
+  right: 0;
+}
+.team .team_btn_prev {
+  left: 0;
+}
+.team .swiper-button-disabled {
+  opacity: 0.7;
+  cursor: auto;
 }
 .team .team_card {
   padding: 44px 24px;
   text-align: center;
-  flex: 1;
   border-radius: 28px;
   background: #F6F7F9;
   border: 2px solid transparent;

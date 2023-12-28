@@ -46,7 +46,7 @@ var swiper = new Swiper(".goodsSwiper", {
     },
 });
 
-var swiper = new Swiper(".catalogSwiper", {
+var swiper_two = new Swiper(".catalogSwiper", {
     // slidesPerView: "auto",
     spaceBetween: 56,
     breakpoints: {
@@ -67,7 +67,7 @@ var swiper = new Swiper(".catalogSwiper", {
 
 });
 
-var swiper = new Swiper(".inventionsSwiper", {
+var swiper_three = new Swiper(".inventionsSwiper", {
     // slidesPerView: "auto",
     spaceBetween: 23,
     breakpoints: {
@@ -84,6 +84,48 @@ var swiper = new Swiper(".inventionsSwiper", {
     navigation: {
       nextEl: ".inventions_btn_next",
       prevEl: ".inventions_btn_prev",
+    },
+
+});
+
+var swiper_four = new Swiper(".teamSwiper", {
+    // slidesPerView: "auto",
+    spaceBetween: 42,
+    breakpoints: {
+        576: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 3,
+        },
+        992: {
+            slidesPerView: 4,
+        }
+    },
+    navigation: {
+      nextEl: ".team_btn_next",
+      prevEl: ".team_btn_prev",
+    },
+
+});
+
+var swiper_four = new Swiper(".specialistsSwiper", {
+    // slidesPerView: "auto",
+    spaceBetween: 42,
+    breakpoints: {
+        576: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 3,
+        },
+        992: {
+            slidesPerView: 4,
+        }
+    },
+    navigation: {
+      nextEl: ".specialists_btn_next",
+      prevEl: ".specialists_btn_prev",
     },
 
 });
