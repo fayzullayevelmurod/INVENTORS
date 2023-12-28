@@ -132,11 +132,12 @@ address {
     @include flex-center();
     gap: 50px;
 
-    .home_text {
-        max-width: 551px;
-    }
+    // .home_text {
+    //     max-width: 551px;
+    // }
 
     h1 {
+        max-width: 551px;
         color: $black;
         font-size: 74px;
         font-weight: 600;
@@ -190,149 +191,84 @@ address {
             border: 2px solid #000;
         }
     }
+
+    .home_text_bottom {
+        width: 596px;
+        margin-top: 119px;
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+
+        .home_text_bottom_head {
+            @include flex-center();
+            // gap: 20px;
+
+            img {
+                transform: translateY(-10px);
+            }
+
+            .left {
+                height: 58px;
+                flex: 1;
+                display: flex;
+                position: relative; 
+            }
+
+            .img_one {
+                position: absolute;
+                left: -12px;
+            }
+            .img_two {
+                position: absolute;
+                left: 20px;
+            }
+            .img_three {
+                position: absolute;
+                left: 50px;
+            }
+
+            .circle_img {
+                position: absolute;
+                left: 100px;
+                @include flex-full-center();
+                width: 58px;
+                height: 58px;
+                border-radius: 50%;
+                background-color: #FFF;
+                border: 2px solid #EBEBEB;
+                filter: drop-shadow(0px 4px 14px rgba(28, 31, 36, 0.08));
+
+                span {
+                    color: #000;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 24px;
+                }
+            }
+        }
+
+        h4 {
+            // flex: 3;
+            color: #000;
+            font-size: 39px;
+            font-weight: 500;
+            line-height: 24px;
+        }
+
+        p {
+            color: #9390A6;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 21px;
+            margin-bottom: 0;
+        }
+    }
 }
 // home
 
-// super_project
-.super_project {
-    margin-top: 87px;
-
-    .main_container {
-        position: relative;
-    }
-
-    .body_right {
-        img {
-            position: absolute;
-            bottom: -30px;
-            right: 0;
-        }
-    }
-    
-    .super_project_in {
-        border-radius: 28px;
-        background: #F6F7F9;    
-        max-width: 1090px;
-        padding: 30px 51px 50px
-        30px;
-
-    }
-
-    .super_project_head {
-        @include flex-start();
-        .head_icon {
-            @include flex-full-center();
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            background-color: $coral;
-        }
-
-        .progress_wrapper {
-            margin-right: 36px;
-            display: flex;
-            flex-direction: column;
-            align-items: end;
-            margin-left: auto;
-
-            .progress {
-                height: 14px;
-                border-radius: 17px;
-                border: 2px solid #212529;
-                overflow: hidden;
-                width: 223px;
-                margin-bottom: 4px;
-
-                span {
-                    width: 100%;
-                    height: 14px;
-                    @include flex-center();
-                    background-color: $coral;
-                    border-radius: 17px;
-                }
-            }
-
-            h6 {
-                color: #535B61;
-                font-size: 16px;
-                font-weight: 500;
-                line-height: 123%;
-                letter-spacing: -1px;
-                margin-bottom: 12px;
-            }
-
-            .progress_icon {
-                @include flex-full-center();
-                width: 28px;
-                height: 28px;
-                border-radius: 50%;
-                background-color: $black;
-            }
-        }
-
-        ul {
-            display: flex;
-            gap: 36px;
-
-            li {
-                display: flex;
-                flex-direction: column;
-                color: $black;
-                font-size: 22px;
-                font-weight: 600;
-                line-height: 123%;
-                letter-spacing: -1px;
-
-                span {
-                    color: #9390A6;
-                    font-size: 16px;
-                    font-weight: 400;
-                    line-height: 123%;
-                    letter-spacing: -1px;
-                }
-            }
-        }
-    }
-
-    .super_project_body {
-        margin-top: 32px;
-        @include flex-start();
-
-        .body_left {
-            h5 {
-                max-width: 488px;
-                color: $black;
-                font-size: 24px;
-                font-weight: 600;
-                line-height: 123%;
-                letter-spacing: -1px;
-                margin-bottom: 20px;
-            }
-            p {
-                max-width: 369px;
-                color: #78758A;
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 21px;
-                margin-bottom: 27px;
-            }
-
-            a {
-                color: #000;
-                font-size: 14.44px;
-                font-weight: 500;
-                line-height: 23.63px;
-                padding: 12px 30px;
-                border-radius: 12px;
-                background: $coral;
-            }
-        }
-    }
-}
-// super_project
-
 // invention
 .inventions {
+    margin-top: 150px;
 
     .inventions_swipper {
         // border: 1px solid red;
@@ -514,6 +450,144 @@ address {
     }
 }
 // invention
+
+// super_project
+.super_project {
+    margin-top: 87px;
+
+    .main_container {
+        position: relative;
+    }
+
+    .body_right {
+        img {
+            position: absolute;
+            bottom: -30px;
+            right: 0;
+        }
+    }
+    
+    .super_project_in {
+        border-radius: 28px;
+        background: #F6F7F9;    
+        max-width: 1090px;
+        padding: 30px 51px 50px
+        30px;
+
+    }
+
+    .super_project_head {
+        @include flex-start();
+        .head_icon {
+            @include flex-full-center();
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: $coral;
+        }
+
+        .progress_wrapper {
+            margin-right: 36px;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            margin-left: auto;
+
+            .progress {
+                height: 14px;
+                border-radius: 17px;
+                border: 2px solid #212529;
+                overflow: hidden;
+                width: 223px;
+                margin-bottom: 4px;
+
+                span {
+                    width: 100%;
+                    height: 14px;
+                    @include flex-center();
+                    background-color: $coral;
+                    border-radius: 17px;
+                }
+            }
+
+            h6 {
+                color: #535B61;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 123%;
+                letter-spacing: -1px;
+                margin-bottom: 12px;
+            }
+
+            .progress_icon {
+                @include flex-full-center();
+                width: 28px;
+                height: 28px;
+                border-radius: 50%;
+                background-color: $black;
+            }
+        }
+
+        ul {
+            display: flex;
+            gap: 36px;
+
+            li {
+                display: flex;
+                flex-direction: column;
+                color: $black;
+                font-size: 22px;
+                font-weight: 600;
+                line-height: 123%;
+                letter-spacing: -1px;
+
+                span {
+                    color: #9390A6;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 123%;
+                    letter-spacing: -1px;
+                }
+            }
+        }
+    }
+
+    .super_project_body {
+        margin-top: 32px;
+        @include flex-start();
+
+        .body_left {
+            h5 {
+                max-width: 488px;
+                color: $black;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 123%;
+                letter-spacing: -1px;
+                margin-bottom: 20px;
+            }
+            p {
+                max-width: 369px;
+                color: #78758A;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 21px;
+                margin-bottom: 27px;
+            }
+
+            a {
+                color: #000;
+                font-size: 14.44px;
+                font-weight: 500;
+                line-height: 23.63px;
+                padding: 12px 30px;
+                border-radius: 12px;
+                background: $coral;
+            }
+        }
+    }
+}
+// super_project
 
 // catalog
 .catalog {
