@@ -751,6 +751,7 @@ address {
   background: transparent;
 }
 .team .team_card img {
+  width: 214px;
   height: 226px;
 }
 .team .team_card h6 {
