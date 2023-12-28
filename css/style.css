@@ -140,6 +140,142 @@ address {
   border: 2px solid #000;
 }
 
+.inventions .inventions_swipper {
+  border: 1px solid red;
+  position: relative;
+}
+.inventions .inventions_swipper .inventions_card {
+  border-radius: 28px;
+  background: #F6F7F9;
+  transition: 0.2s ease;
+  padding: 30px 30px 24px 30px;
+}
+.inventions .inventions_swipper .inventions_card:hover {
+  background-color: #171717;
+}
+.inventions .inventions_swipper .inventions_card:hover a, .inventions .inventions_swipper .inventions_card:hover h3, .inventions .inventions_swipper .inventions_card:hover h5 {
+  color: #F0F0F0;
+}
+.inventions .inventions_swipper .inventions_card:hover a svg {
+  transform: scale(2.5);
+}
+.inventions .inventions_swipper .catalog_btn {
+  position: absolute;
+}
+.inventions .inventions_swipper .catalog_btn_next {
+  right: 0;
+}
+.inventions .inventions_swipper .catalog_btn_prev {
+  left: 0;
+}
+.inventions .inventions_swipper .swiper-button-disabled {
+  opacity: 0.7;
+  cursor: auto;
+}
+.inventions .inventions_swipper .inventions_head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+.inventions .inventions_swipper .inventions_head .invention_icon {
+  background-color: #FD3;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inventions .inventions_swipper .inventions_head .head_right {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 4px;
+}
+.inventions .inventions_swipper .inventions_head .progress {
+  width: 219px;
+  overflow: hidden;
+  height: 14px;
+  border-radius: 17px;
+  border: 2px solid #212529;
+}
+.inventions .inventions_swipper .inventions_head .progress span {
+  height: 16px;
+  width: 100%;
+  background-color: #FD3;
+}
+.inventions .inventions_swipper .inventions_head h6 {
+  color: #535B61;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 123%;
+  letter-spacing: -1px;
+}
+.inventions .inventions_swipper .inventions_head .head_right_icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #171717;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inventions .inventions_swipper .invention_body {
+  margin: 24px 0 27px 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.inventions .inventions_swipper .invention_right {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.inventions .inventions_swipper .invention_right h5 {
+  color: #171717;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 123%;
+  letter-spacing: -1px;
+}
+.inventions .inventions_swipper .invention_right h5 span {
+  display: block;
+  color: #9390A6;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 123%;
+  letter-spacing: -1px;
+}
+.inventions .inventions_swipper h3 {
+  color: #171717;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 123%;
+  letter-spacing: -1px;
+}
+.inventions .inventions_swipper p {
+  margin: 5px 0 6px 0;
+  color: #9390A6;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 123%;
+  letter-spacing: -1px;
+}
+.inventions .inventions_swipper a {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  color: #171717;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 123%;
+}
+.inventions .inventions_swipper a svg {
+  margin-left: 5px;
+  padding-left: 2px;
+}
+
 .catalog {
   margin: 150px 0;
 }

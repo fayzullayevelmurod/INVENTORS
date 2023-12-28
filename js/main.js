@@ -67,3 +67,24 @@ var swiper = new Swiper(".catalogSwiper", {
 
 });
 
+var swiper = new Swiper(".inventionsSwiper", {
+    // slidesPerView: "auto",
+    spaceBetween: 23,
+    breakpoints: {
+        576: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        992: {
+            slidesPerView: 3,
+        }
+    },
+    navigation: {
+      nextEl: ".inventions_btn_next",
+      prevEl: ".inventions_btn_prev",
+    },
+
+});
+
