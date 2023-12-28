@@ -140,6 +140,128 @@ address {
   border: 2px solid #000;
 }
 
+.super_project {
+  margin-top: 87px;
+}
+.super_project .main_container {
+  position: relative;
+}
+.super_project .body_right img {
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+}
+.super_project .super_project_in {
+  border-radius: 28px;
+  background: #F6F7F9;
+  max-width: 1090px;
+  padding: 30px 51px 50px 30px;
+}
+.super_project .super_project_head {
+  display: flex;
+  align-items: start;
+}
+.super_project .super_project_head .head_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #FD3;
+}
+.super_project .super_project_head .progress_wrapper {
+  margin-right: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-left: auto;
+}
+.super_project .super_project_head .progress_wrapper .progress {
+  height: 14px;
+  border-radius: 17px;
+  border: 2px solid #212529;
+  overflow: hidden;
+  width: 223px;
+  margin-bottom: 4px;
+}
+.super_project .super_project_head .progress_wrapper .progress span {
+  width: 100%;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  background-color: #FD3;
+  border-radius: 17px;
+}
+.super_project .super_project_head .progress_wrapper h6 {
+  color: #535B61;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 123%;
+  letter-spacing: -1px;
+  margin-bottom: 12px;
+}
+.super_project .super_project_head .progress_wrapper .progress_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #171717;
+}
+.super_project .super_project_head ul {
+  display: flex;
+  gap: 36px;
+}
+.super_project .super_project_head ul li {
+  display: flex;
+  flex-direction: column;
+  color: #171717;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 123%;
+  letter-spacing: -1px;
+}
+.super_project .super_project_head ul li span {
+  color: #9390A6;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 123%;
+  letter-spacing: -1px;
+}
+.super_project .super_project_body {
+  margin-top: 32px;
+  display: flex;
+  align-items: start;
+}
+.super_project .super_project_body .body_left h5 {
+  max-width: 488px;
+  color: #171717;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 123%;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+.super_project .super_project_body .body_left p {
+  max-width: 369px;
+  color: #78758A;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  margin-bottom: 27px;
+}
+.super_project .super_project_body .body_left a {
+  color: #000;
+  font-size: 14.44px;
+  font-weight: 500;
+  line-height: 23.63px;
+  padding: 12px 30px;
+  border-radius: 12px;
+  background: #FD3;
+}
+
 .inventions .inventions_swipper {
   position: relative;
   display: flex;
